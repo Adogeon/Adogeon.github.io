@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8"/>
+        <title>Contact Page</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    </head>
+     
+    <body background = asset\images\circuit.png>
+        <nav class= "navbar navbar-dark navbar-expand-md bg-primary justify-content-between border-bottom border-dark">
+            <span class="h1 text-light"> Anh Dao</span>
+                <ul class = "navbar-nav d-flex jusity-content-end">
+                    <li class="nav-item mx-2"><a href=index.html class ="nav-link">About</a></li>
+                    <li class="nav-item mx-2"><a href=portfolio.html class ="nav-link">Portfolio</a></li>
+                    <li class="nav-item mx-2"><a href=contact.html class ="nav-link active">Contact</a></li>
+                </ul>
+        </nav>
+
+        <main class="col-md-8 mx-auto mt-3 bg-white p-3">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h1 class="text-primary">Contact</h1>
+                    </div>
+                </div>
+                <form class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" value="John Smith" class="form-control">
+                    <br>
+                    <label for="email">Email:</label>
+                    <input type="text" id="email" value="example@email.com" class="form-control">
+                    <br>
+                    <label for="message">Message:</label>
+                    <textarea type="text" id="message" class="form-control" rows="5"></textarea>
+                    <br>
+                    <input type="button" class= "btn btn-primary"value="Submit">
+                </form>
+            </div>
+        </main>
+        <footer class="fixed-bottom border-top border-primary d-flex justify-content-center bg-dark">
+            <span class="text-light">Copyright@</span>
+        </footer>
+       
+    </body>
+</html>

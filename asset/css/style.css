@@ -1,0 +1,216 @@
+html{
+    
+}
+
+body {
+    width:100%;
+    background-image:url("../images/circuit.png");
+    background-color:#cccccc;
+    padding:0px;
+    margin:0px;
+    color: #777777;
+    font-family:'Airal', 'Helvetica Neue',Helvetica, sans-serif;
+}
+
+.bigFont {
+    font-size: 2.5em;
+}
+
+.navBrand {
+    background-color: #4aaaa5;
+    color:#ffffff;
+    height:100%;
+    line-height:70px;
+    text-align:center;
+    padding:0px 24px 0px 24px;
+}
+/*nav-bar style */
+nav {
+    background:#ffffff;
+    font-family: 'Georgia', Times, "Times New Roman", serif;
+    color:#cccccc;  
+    border-bottom: 2px solid #cccccc;
+    width:100%;
+    height:70px;
+    display:flex;
+    justify-content:center;
+    margin-bottom:20px;
+}
+
+.navBar {
+    width:960px;
+    font-weight:bold;
+    display:flex;
+    justify-content:space-between;
+}
+
+.navMenu {
+    list-style:none;
+    margin:0px;
+    height:100%;
+    display:flex;
+    justify-content:flex-end;
+    align-content:center;
+}
+
+.divider {
+    border-left: 2px solid #cccccc;
+    margin: 25px 0px 25px 0px;
+    height:20px;
+}
+
+a, a:visited, a:hover, a:active {
+    color: inherit;
+}
+
+.nav-button {
+    display:block;
+    padding: 25px 10px 25px 10px;
+    text-decoration: none;
+}
+
+.nav-button:hover,.nav-button:focus,.nav-button:active {
+    background-color: #4aaaa5;
+    color:#ffffff;
+    border:1px solid #4aaaa5;
+    margin:0px;
+}
+
+a.active {
+    background-color:#4aaaa5;
+    color:#ffffff;
+    border-bottom: 6px solid #777777;
+    padding-bottom:21px;
+}
+
+a.active:hover{
+    padding-bottom:inherit;
+    padding: 25px 10px 25px 10px;
+}
+
+/*main block style*/
+main {
+    background-color:#ffffff;
+    width:960px;
+    margin:auto;
+    padding:auto;
+}
+
+div.mainSec {
+    width:95%;
+    margin:auto;
+    padding-bottom:30px;
+}
+
+div.bodySec {
+    display:flex;
+    justify-content:flex-start;
+}
+
+h2 {
+    font-size:2.5em;
+    color:#4aaaa5;
+    border-bottom: 3px solid #cccccc;
+    padding:0.83em 0em 0.83em 0em;
+    margin-block-end:0px;
+    margin-block-start:0px;
+}
+
+footer {
+    background-color:#666666;
+    color:#ffffff;
+    text-align:center;
+    width:100%;
+    position:fixed;
+    bottom:0px;
+    border-top:3px solid #4aaaa5;
+    height:30px;
+}
+
+.std-footer {
+    text-align:center;
+    line-height: 30px;
+    margin:auto;
+}
+
+/*index start*/
+
+.proPic {
+    height:300px;
+    margin: 0px 17px 17px 0px;
+}
+
+/*index end*/
+
+/*portfolio start*/
+
+
+#portSec {
+    display:flex;
+    flex-direction:column;
+    justify-content: space-between;
+    align-content: center;
+}
+
+.portRow {
+    display:flex;
+    justify-content:space-between;
+    margin:10px;
+}
+
+.imgContainer {
+    width:300px;
+    height:300px;
+}
+
+.portImg {
+    width:300px;
+    height:300px;
+}
+
+.imgTitle {
+    background-color:#4aaaa5;
+    width:300px;
+    text-align:center;
+    position:relative;
+    left:0px;
+    bottom:30px;
+    font-size:1.2em;
+    color:#ffffff;
+}
+
+/*portfolio end*/
+
+/*contact* start*/
+form {
+    font-style:bold;
+    padding-top:20px;
+    size:0.5em;
+}
+
+input {
+    margin-top:5px;
+    margin-bottom: 10px;
+}
+
+input[type=button] {
+    text-align:middle;
+    width:6em;
+    height:2em;
+    font-size:1.3em;
+    background-color:#4aaaa5;
+    color:#ffffff;
+    border-width:0px;
+}
+
+input[type=text] {
+    padding: 10px 0px 10px 0px;
+    color:#777777;
+    width:100%;
+}
+
+input[name=message] {
+    padding: 50px 0px 50px 0px;
+    font:0.8em;
+}
+/*contact end */

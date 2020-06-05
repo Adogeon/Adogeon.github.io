@@ -1,0 +1,11 @@
+.root {
+  display: flex;
+  margin: auto;
+}
+
+.container {
+  max-height: 100vh;
+  overflow: scroll;
+  overflow-x: hidden;
+  padding: 0 2rem;
+}

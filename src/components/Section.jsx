@@ -1,5 +1,7 @@
-import React, { Children } from "react"
+import React from "react"
 
-const Section = ({ name, children }) => <section id={name}>{children}</section>
+import styles from "../styles/Section.module.scss"
 
-export default Children
+const Section = ({ name, children }) => <section id={name} className={styles.root}>{children}</section>
+
+export default Section

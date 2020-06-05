@@ -1,12 +1,14 @@
 import React from "react"
 
 import Nav from "./Nav"
+import "../styles/index.scss"
+import styles from "../styles/Layout.module.scss"
 
 const Layout = ({ children }) => (
-  <div>
+  <div className={styles.root}>
     <Nav />
-    {children}
+    <div className={styles.container}>{children}</div>
   </div>
 )
 
-export default Layout;
+export default Layout

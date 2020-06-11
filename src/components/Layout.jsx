@@ -1,14 +1,22 @@
 import React from "react"
+import { graphql } from "gatsby"
 
 import Nav from "./Nav"
-import "../styles/index.scss"
+import "../styles/global.scss"
 import styles from "../styles/Layout.module.scss"
+import { useStaticQuery } from "gatsby"
 
-const Layout = ({ children }) => (
-  <div className={styles.root}>
-    <Nav />
-    <div className={styles.container}>{children}</div>
-  </div>
-)
+const Layout = ({ children }) => {
+  const data = useStaticQuery(graphql`
+    query {
+      site {
+        siteMetadata {
+          title
+        }
+      }
+    }
+  `)
+  return <div className={styles.root}>{children}</div>
+}
 
 export default Layout

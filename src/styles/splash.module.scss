@@ -1,0 +1,24 @@
+
+//import
+@import"./utils/variable.scss";
+
+//end import
+
+.root {
+  grid-column: 1 / span 5;
+  height: 100vh;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.text {
+  font-family: Roboto Slab;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 47px;
+  display: flex;
+  align-items: center;
+  color: $coffee;
+}

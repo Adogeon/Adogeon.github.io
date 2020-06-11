@@ -1,3 +1,24 @@
 .root {
-  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 3rem;
+}
+
+.title {
+  line-height: 2.5rem;
+}
+
+.title::first-letter {
+  text-transform: capitalize;
+}
+
+.content {
+  display: flex;
+  flex-flow: row wrap;
+  align-content: space-around;
+  justify-content: space-around;
+}
+
+.content > * {
+  margin: 1em 0;
 }

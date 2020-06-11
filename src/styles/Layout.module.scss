@@ -1,11 +1,10 @@
-.root {
-  display: flex;
-  margin: auto;
-}
+@import "./utils/variable.scss";
 
-.container {
-  max-height: 100vh;
-  overflow: scroll;
-  overflow-x: hidden;
-  padding: 0 2rem;
+.root {
+  display: grid;
+  grid-template-columns: repeat(12, 70px);
+  grid-template-rows: auto;
+  column-gap: 30px;
+  justify-content: center;
+  background-color: $white;
 }

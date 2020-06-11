@@ -5,15 +5,30 @@ import styles from "../styles/Nav.module.scss"
 
 const Nav = () => (
   <div className={styles.root}>
-    <li>
+    <li className={styles.navList}>
       <ul>
-        <Link to="/#bio">Bio</Link>
+        <Link
+          to="/#bio"
+          className={styles.navItem}
+        >
+          Bio
+        </Link>
       </ul>
       <ul>
-        <Link to="/#portfolio">Work</Link>
+        <Link
+          to="/#portfolio"
+          className={styles.navItem}
+        >
+          Work
+        </Link>
       </ul>
       <ul>
-        <Link to="/#contact">Contact</Link>
+        <Link
+          to="/#contact"
+          className={styles.navItem}
+        >
+          Contact
+        </Link>
       </ul>
     </li>
   </div>

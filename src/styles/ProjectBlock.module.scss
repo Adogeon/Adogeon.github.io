@@ -1,0 +1,23 @@
+.root {
+  display: grid;
+  grid-template-columns: 50% 10% 40%;
+  justify-content: center;
+}
+
+.text-block {
+  grid-column: 1;
+}
+
+.img-wrapper {
+  grid-column: 3;
+}
+
+.fluid-img {
+  width: auto;
+  height: 100%;
+}
+
+.action-block {
+  display: flex;
+  justify-content: center;
+}

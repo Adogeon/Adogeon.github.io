@@ -1,0 +1,18 @@
+.root {
+  display: grid;
+  grid-template-columns: 40% 10% 50%;
+  grid-template-rows: auto;
+}
+
+.img-wrapper {
+  grid-column: 1;
+
+  img {
+    height: 100%;
+    width: auto;
+  }
+}
+
+.text-block {
+  grid-column: 3;
+}

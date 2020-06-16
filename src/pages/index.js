@@ -7,6 +7,7 @@ const Index = () => {
   return (
     <Layout>
       <Splash />
+      
     </Layout>
   )
 }

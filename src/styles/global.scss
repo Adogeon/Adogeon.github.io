@@ -30,6 +30,38 @@ ul {
   font-weight: normal;
 }
 
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Robotto Slab", serif;
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 64px;
+
+  @media screen and (max-width: 1170px) {
+    font-size: 4em;
+  }
+}
+
+h2 {
+  font-size: 36px;
+  @media screen and (max-width: 1170px) {
+    font-size: 2.25em;
+  }
+}
+
+div,
+p {
+  font-family: "Open Sans", serif;
+  font-size: 18px;
+  @media screen and (max-width: 1170px) {
+    font-size: 1.125em;
+  }
+}
+
 ol,
 ul {
   list-style: none;

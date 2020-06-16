@@ -1,0 +1,24 @@
+@keyframes fadingIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.fade-in {
+  animation-name: fadingIn;
+  animation-duration: 3s;
+  animation-timing-function: ease-in;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+}
+
+.delay-5 {
+  animation-delay: 5s;
+}
+
+.late-5 {
+  animation-duration: 5s;
+}

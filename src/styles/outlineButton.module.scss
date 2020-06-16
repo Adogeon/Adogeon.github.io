@@ -1,0 +1,20 @@
+@import "./utils/variable.scss";
+
+.root {
+  width: fit-content;
+  padding: 2px 0.5rem;
+  border: 3px solid $royal-blue;
+  font-family: Roboto Slab, serif;
+  font-size: 18px;
+  text-decoration: none;
+  color: $royal-blue;
+  background-size: 200% 100%;
+  background-image: linear-gradient(to right, $royal-blue 50%, $white 50%);
+  background-position: -100% 0;
+  transition: all 0.8s ease-in-out;
+}
+
+.root:hover {
+  color: $white;
+  background-position: 0 0;
+}

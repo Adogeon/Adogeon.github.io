@@ -1,18 +1,54 @@
-.root {
+@import "./utils/variable.scss";
+
+.content-wrapper {
+  grid-column: 1 / span 12;
   display: grid;
-  grid-template-columns: 40% 10% 50%;
+  grid-template-columns: 30% auto 67%;
   grid-template-rows: auto;
+  margin-top: 2rem;
+}
+
+.root {
+  position: relative;
+  background-color: $glaucus;
+  padding-top: 4rem;
+  padding-bottom: calc(150px + 2rem);
+  color: $mint-green;
+  margin-bottom: 0.625rem;
+}
+
+.divider-bottom {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+
+  svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 150px;
+  }
+  .shape-fill {
+    fill: $white;
+  }
 }
 
 .img-wrapper {
   grid-column: 1;
 
   img {
-    height: 100%;
-    width: auto;
+    height: auto;
+    width: 100%;
   }
 }
 
 .text-block {
   grid-column: 3;
+  align-self: center;
+  color: inherit;
+  text-align: start;
 }

@@ -22,12 +22,16 @@
   font-weight: normal;
   font-size: 36px;
   line-height: 47px;
-  display: flex;
-  align-items: center;
   color: $coffee;
+  margin-bottom: 2rem;
+  em {
+    color: $royal-blue;
+    font-style: normal;
+  }
 }
 
 .name-text {
   text-decoration: none;
   color: $royal-blue;
+  padding-left: 0.5rem;
 }

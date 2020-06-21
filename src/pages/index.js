@@ -1,14 +1,20 @@
 import React from "react"
 
-import Layout from "../components/Layout"
 import Splash from "../sections/Splash"
+import AboutMe from "../sections/AboutMe"
+import ProjectList from "../sections/ProjectList"
+import Contact from "../sections/Contact"
+
+import "../styles/global.scss"
 
 const Index = () => {
   return (
-    <Layout>
+    <>
       <Splash />
-      
-    </Layout>
+      <AboutMe />
+      <ProjectList />
+      <Contact />
+    </>
   )
 }
 

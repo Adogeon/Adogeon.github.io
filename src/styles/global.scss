@@ -1,12 +1,13 @@
 //import
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto+Slab:wght@400;700&display=swap");
-
+@import "./utils/variable.scss";
 //reset
 
 html {
   box-sizing: border-box;
   font-size: 16px;
   font-family: sans-serif;
+  background-color: $white;
 }
 
 *,

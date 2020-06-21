@@ -2,19 +2,25 @@
   display: grid;
   grid-template-columns: 50% 10% 40%;
   justify-content: center;
+  margin: 2rem 0;
+  text-align: start;
 }
 
 .text-block {
   grid-column: 1;
+  p {
+    margin: 1rem 0;
+  }
 }
 
 .img-wrapper {
   grid-column: 3;
-}
+  align-self: center;
 
-.fluid-img {
-  width: auto;
-  height: 100%;
+  img {
+    width: 100%;
+    height: auto;
+  }
 }
 
 .action-block {

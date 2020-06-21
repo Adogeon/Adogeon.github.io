@@ -1,17 +1,22 @@
 import React from "react"
 
+import Layout from "../components/Layout"
 import ProjectBlock from "../components/ProjectBlock"
 import Section from "../components/Section"
 
+import styles from "../styles/ProjectList.module.scss"
+
 const ProjectList = () => {
   return (
-    <Section name={"projects"}>
-      <div className>
-        <ProjectBlock />
-        <ProjectBlock />
-        <ProjectBlock />
-      </div>
-    </Section>
+    <div className={styles.root}>
+      <Layout>
+        <Section name={"projects"} animateFrom={"up"}>
+          <ProjectBlock />
+          <ProjectBlock />
+          <ProjectBlock />
+        </Section>
+      </Layout>
+    </div>
   )
 }
 

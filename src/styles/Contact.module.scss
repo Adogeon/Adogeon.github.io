@@ -1,5 +1,35 @@
+@import "./utils/variable.scss";
+
 .root {
+  position: relative;
+  color: $mint-green;
+  background-color: $glaucus;
+  padding-bottom: 4rem;
+  padding-top: calc(150px + 2rem);
+}
+
+.divider-top {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+
+  svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 150px;
+  }
+
+  .shape-fill {
+    fill: $white;
+  }
+}
+
+.action-bar {
+  line-height: 4rem;
   display: flex;
   justify-content: center;
-  font-size: 18px;
 }

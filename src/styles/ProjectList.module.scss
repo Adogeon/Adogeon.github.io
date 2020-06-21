@@ -1,4 +1,6 @@
+@import "../styles/utils/variable.scss";
+
 .root {
-  display: flex;
-  flex-direction: column;
+  color: $glaucus;
 }
+

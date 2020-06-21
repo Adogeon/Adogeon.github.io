@@ -1,31 +1,26 @@
 import React from "react"
 
 import styles from "../styles/splash.module.scss"
-import animation from "../styles/animation.module.scss"
 import OutlineLink from "../components/OutlineLink"
-import JigLink from "../components/JigLink"
+import Layout from "../components/Layout"
+import FadeInDiv from "../components/FadeInDiv"
 
 const Splash = () => {
-  console.log(animation)
-  console.log([styles.text, animation.fadeIn].join(" "))
   return (
-    <div className={styles.root}>
-      <div className={styles.block}>
-        <div className={[styles.text, animation.fadeIn].join(" ")}>
-          <div>
-            <p>
-              Hello, my name is <u className={styles.nameText}>Anh Dao</u>
+    <Layout>
+      <div className={styles.root}>
+        <div className={styles.block}>
+          <FadeInDiv delayNumber={500}>
+            <p className={styles.text}>
+              Hello, my name is <em> Anh Dao</em>. I am an React Developer
             </p>
-            <p>I am an React Developer</p>
-          </div>
+          </FadeInDiv>
+          <FadeInDiv>
+            <OutlineLink to="/#start" label="Learn More" />
+          </FadeInDiv>
         </div>
-        <OutlineLink
-          to="/#about"
-          label="Learn More"
-          styleNames={[animation.fadeIn, animation.late5]}
-        />
       </div>
-    </div>
+    </Layout>
   )
 }
 

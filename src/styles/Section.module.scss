@@ -2,11 +2,14 @@
   grid-column: 1 / span 12;
   display: flex;
   flex-direction: column;
-  margin-bottom: 3rem;
+  text-align: center;
 }
 
 .title {
   line-height: 2.5rem;
+  padding: 1rem 0;
+  margin: auto;
+  color: inherit;
 }
 
 .title::first-letter {

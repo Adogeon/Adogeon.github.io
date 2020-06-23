@@ -1,0 +1,6 @@
+{
+  "title": "Geekverse",
+  "summary": " Geekverse is an ambitious project to help user to get into a fictional universe. Do you know how many movies the Star War franchise have ? How about comics ? Or TV shows ?We strive to resolve this by run user search through three different APIs (Marvel API, GoogleBookAPi, and OpenMDBApi) for results in comics, books, movie and tv-shows.",
+  "demo": "https://adogeon.github.io/Geekverse/",
+  "source": "https://github.com/Adogeon/Geekverse"
+}

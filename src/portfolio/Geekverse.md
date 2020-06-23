@@ -1,5 +1,0 @@
----
-title: "Geekverse"
----
-
-Geekverse data

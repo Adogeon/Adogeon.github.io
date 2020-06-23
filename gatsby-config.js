@@ -5,12 +5,12 @@ module.exports = {
     author: `Anh Dao`,
   },
   plugins: [
-    `gatsby-plugin-react-helmet`,
+    `gatsby-transformer-json`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `porfolio`,
-        path: `${__dirname}/src/portfolio`,
+        path: `${__dirname}/src/data`,
       },
     },
     `gatsby-transformer-remark`,

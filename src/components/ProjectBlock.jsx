@@ -6,25 +6,21 @@ import OutlineLink from "./OutlineLink"
 import styles from "../styles/ProjectBlock.module.scss"
 import FadeInDiv from "./FadeInDiv"
 
-const ProjectBlock = () => {
+const ProjectBlock = ({ content }) => {
+  console.log(content)
   return (
     <div className={styles.root}>
       <div className={styles.textBlock}>
         <FadeInDiv delayNumber={350} fromDir={"up"}>
-          <h2 className={styles.title}>Title</h2>
+          <h2 className={styles.title}>{content.title}</h2>
         </FadeInDiv>
         <FadeInDiv>
-          <p className={styles.paragraph}>
-            Description/summary Lorem ipsum dolor sit amet, consectetur
-            adipiscing elit. Donec eu justo leo. Donec porta nisi posuere ex
-            rutrum semper. Suspendisse dictum rhoncus enim, sit amet
-            pellentesque est cursus eu. Ut.
-          </p>
+          <p className={styles.paragraph}>{content.summary}</p>
         </FadeInDiv>
         <FadeInDiv delayNumber={750} fromDir={"down"}>
           <div className={styles.actionBlock}>
-            <OutlineLink to="#" label="Live Demo" />
-            <JigLink to="#" label="Source Code" />
+            <OutlineLink to={content.demo} label="Live Demo" />
+            <JigLink to={content.source} label="Source Code" />
           </div>
         </FadeInDiv>
       </div>

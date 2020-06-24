@@ -7,21 +7,22 @@ import styles from "../styles/ProjectBlock.module.scss"
 import FadeInDiv from "./FadeInDiv"
 
 const ProjectBlock = ({ content }) => {
-  console.log(content)
   return (
     <div className={styles.root}>
-      <div className={styles.textBlock}>
+      <div className={styles.title}>
         <FadeInDiv delayNumber={350} fromDir={"up"}>
-          <h2 className={styles.title}>{content.title}</h2>
+          <h2>{content.title}</h2>
         </FadeInDiv>
+      </div>
+      <div className={styles.textBlock}>
         <FadeInDiv>
           <p className={styles.paragraph}>{content.summary}</p>
         </FadeInDiv>
+      </div>
+      <div className={styles.actionBlock}>
         <FadeInDiv delayNumber={750} fromDir={"down"}>
-          <div className={styles.actionBlock}>
-            <OutlineLink to={content.demo} label="Live Demo" />
-            <JigLink to={content.source} label="Source Code" />
-          </div>
+          <OutlineLink to={content.demo} label="Live Demo" />
+          <JigLink to={content.source} label="Source Code" />
         </FadeInDiv>
       </div>
       <div className={styles.imgWrapper}>

@@ -5,7 +5,17 @@
   display: grid;
   grid-template-columns: 30% auto 67%;
   grid-template-rows: auto;
+  grid-template-areas: "photo . text";
   margin-top: 2rem;
+
+  @media screen and (orientation: portrait) {
+    text-align: center;
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
+    grid-template-areas:
+      "text"
+      "photo";
+  }
 }
 
 .root {
@@ -38,7 +48,7 @@
 }
 
 .img-wrapper {
-  grid-column: 1;
+  grid-area: photo;
 
   img {
     height: auto;
@@ -47,8 +57,11 @@
 }
 
 .text-block {
-  grid-column: 3;
+  grid-area: text;
   align-self: center;
   color: inherit;
   text-align: start;
+  @media screen and (orientation: portrait) {
+    text-align: center;
+  }
 }

@@ -1,12 +1,24 @@
 import React from "react"
+import { useStaticQuery, graphql } from "gatsby"
 
 import Section from "../components/Section"
 import FadeInDiv from "../components/FadeInDiv"
 import styles from "../styles/Contact.module.scss"
+import JigLink from "../components/JigLink"
 import { FaGithubAlt, FaLinkedinIn, FaEnvelope } from "react-icons/fa"
 
 const Contact = () => {
-  return (
+  const data = useStaticQuery(graphql`
+    query linkQuery {
+      dataJson {
+        github
+        linkedin
+        email
+      }
+    }
+  `)
+
+  return data ? (
     <div className={styles.root}>
       <div className={styles.dividerTop}>
         <svg
@@ -24,13 +36,24 @@ const Contact = () => {
       <Section name="Contact Me" animateFrom={"down"}>
         <FadeInDiv delay={500} fromDir={"down"}>
           <div className={styles.actionBar}>
-            <FaLinkedinIn size={"3em"} />
-            <FaGithubAlt size={"3em"} />
-            <FaEnvelope size={"3em"} />
+            <JigLink
+              to={data.dataJson.linkedin}
+              label={<FaLinkedinIn size={"3em"} />}
+            />
+            <JigLink
+              to={data.dataJson.github}
+              label={<FaGithubAlt size={"3em"} />}
+            />
+            <JigLink
+              to={`mailto:${data.dataJson.email}`}
+              label={<FaEnvelope size={"3em"} />}
+            />
           </div>
         </FadeInDiv>
       </Section>
     </div>
+  ) : (
+    <div>Loading ... </div>
   )
 }
 

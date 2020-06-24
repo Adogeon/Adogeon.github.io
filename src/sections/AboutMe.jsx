@@ -1,4 +1,5 @@
 import React from "react"
+import { useStaticQuery, graphql } from "gatsby"
 
 import Section from "../components/Section"
 import Layout from "../components/Layout"
@@ -7,7 +8,15 @@ import FadeInDiv from "../components/FadeInDiv"
 import styles from "../styles/AboutMe.module.scss"
 
 const AboutMe = () => {
-  return (
+  const data = useStaticQuery(graphql`
+    query summaryQuery {
+      dataJson {
+        summary
+      }
+    }
+  `)
+
+  return data ? (
     <div className={styles.root} id="start">
       <div className={styles.dividerBottom}>
         <svg
@@ -33,20 +42,15 @@ const AboutMe = () => {
 
             <div className={styles.textBlock}>
               <FadeInDiv fromDir={"right"}>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
-                  nec sapien ullamcorper, dictum urna a, interdum tellus. Morbi
-                  neque mauris, ultrices et interdum ut, rhoncus nec neque.
-                  Maecenas at maximus ante. Aliquam commodo ac nisi aliquet
-                  laoreet. Maecenas nec diam sit amet arcu fringilla lobortis at
-                  nec arcu. Curabitur eu volutpat sem.
-                </p>
+                <p>{data.dataJson.summary}</p>
               </FadeInDiv>
             </div>
           </div>
         </Section>
       </Layout>
     </div>
+  ) : (
+    <div>Loading...</div>
   )
 }
 

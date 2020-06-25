@@ -2,6 +2,7 @@ import React from "react"
 
 import JigLink from "./JigLink"
 import OutlineLink from "./OutlineLink"
+import ImageFluidForPath from "./ImageFluidForPath"
 
 import styles from "../styles/ProjectBlock.module.scss"
 import FadeInDiv from "./FadeInDiv"
@@ -27,7 +28,11 @@ const ProjectBlock = ({ content }) => {
       </div>
       <div className={styles.imgWrapper}>
         <FadeInDiv delayNumber={750} fromDir={"right"}>
-          <img src="https://picsum.photos/450/300/" />
+          {content.imagePath ? (
+            <ImageFluidForPath path={content.imagePath} />
+          ) : (
+            <ImageFluidForPath />
+          )}
         </FadeInDiv>
       </div>
     </div>

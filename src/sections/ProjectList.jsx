@@ -17,12 +17,13 @@ const ProjectList = () => {
             summary
             demo
             source
+            imagePath
           }
         }
       }
     }
   `)
- 
+
   return (
     <div className={styles.root}>
       <Layout>

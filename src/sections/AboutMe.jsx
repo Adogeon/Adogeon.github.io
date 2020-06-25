@@ -4,8 +4,10 @@ import { useStaticQuery, graphql } from "gatsby"
 import Section from "../components/Section"
 import Layout from "../components/Layout"
 import FadeInDiv from "../components/FadeInDiv"
+import ImageFluidForPath from "../components/ImageFluidForPath"
 
 import styles from "../styles/AboutMe.module.scss"
+import ImageFluid from "../components/ImageFluidForPath"
 
 const AboutMe = () => {
   const data = useStaticQuery(graphql`
@@ -36,7 +38,7 @@ const AboutMe = () => {
           <div className={styles.contentWrapper}>
             <div className={styles.imgWrapper}>
               <FadeInDiv fromDir={"left"}>
-                <img src="https://picsum.photos/300/200/" />
+                <ImageFluidForPath path={"proPic.jpg"} />
               </FadeInDiv>
             </div>
 

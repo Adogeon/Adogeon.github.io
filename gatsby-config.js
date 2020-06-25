@@ -13,7 +13,13 @@ module.exports = {
         path: `${__dirname}/src/data`,
       },
     },
-    `gatsby-transformer-remark`,
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `image`,
+        path: `${__dirname}/src/images`,
+      },
+    },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-sass`,

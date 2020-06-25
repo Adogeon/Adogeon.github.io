@@ -2,5 +2,6 @@
   "title": "Lonely Friend Finder",
   "summary": "The project started to resolve one simple problem: you have a plan for this weekend but noone to enjoy it with. To answer your cry of anguish, we develop Lonely Friend Finder. Simply go on the website, log in to your account and post you events. Then wait for lonely but fun-loving soul in your area petition to join your events. You decide who will join you on this adventure then simply show up and have a fun time with new-fangle friends.",
   "demo": "https://blooming-escarpment-40701.herokuapp.com",
-  "source": "https://github.com/Adogeon/Event-Finder"
+  "source": "https://github.com/Adogeon/Event-Finder",
+  "imagePath": "LonelyFriendFinder.jpg"
 }

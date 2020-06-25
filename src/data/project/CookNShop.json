@@ -2,5 +2,6 @@
   "title": "Cook-N-Shop",
   "summary": "Cook-N-Shop is a simple website that users can use to upload, search, and share their favorite recipes.",
   "demo": "https://project2group2.herokuapp.com/",
-  "source": "https://github.com/Adogeon/Cook-N-Shop"
+  "source": "https://github.com/Adogeon/Cook-N-Shop",
+  "imagePath": "Cook-N-Shop.png"
 }

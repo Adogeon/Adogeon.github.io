@@ -1,7 +1,7 @@
 import React from "react"
 
 import styles from "../styles/splash.module.scss"
-import OutlineLink from "../components/OutlineLink"
+import { OutlineLinkScroll } from "../components/OutlineLink"
 import Layout from "../components/Layout"
 import FadeInDiv from "../components/FadeInDiv"
 
@@ -16,7 +16,7 @@ const Splash = () => {
             </p>
           </FadeInDiv>
           <FadeInDiv>
-            <OutlineLink to="/#start" label="Learn More" />
+            <OutlineLinkScroll to="start" label="Learn More" />
           </FadeInDiv>
         </div>
       </div>

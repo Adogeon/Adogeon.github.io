@@ -3,9 +3,9 @@ import FadeInDiv from "../components/FadeInDiv"
 import styles from "../styles/Section.module.scss"
 import { VisibilitySensor } from "react-visibility-sensor"
 
-const Section = ({ name, animateFrom, children }) => {
+const Section = ({ name, animateFrom, children, ...rest }) => {
   return (
-    <section className={styles.root}>
+    <section className={styles.root} {...rest}>
       <FadeInDiv delayNumber={200} fromDir={animateFrom}>
         <h1 className={styles.title}>{name}</h1>
       </FadeInDiv>

@@ -19,7 +19,7 @@ const AboutMe = () => {
   `)
 
   return data ? (
-    <div className={styles.root} id="start">
+    <div className={styles.root}>
       <div className={styles.dividerBottom}>
         <svg
           data-name="Layer 1"
@@ -34,7 +34,7 @@ const AboutMe = () => {
         </svg>
       </div>
       <Layout>
-        <Section name={"About Me"} animateFrom={"up"}>
+        <Section name={"About Me"} animateFrom={"up"} id="start">
           <div className={styles.contentWrapper}>
             <div className={styles.imgWrapper}>
               <FadeInDiv fromDir={"left"}>
